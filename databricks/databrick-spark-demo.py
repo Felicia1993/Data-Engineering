@@ -57,3 +57,13 @@ plt.bar(x=df_sales['OrderYear'], height=df_sales['GrossRevenue'])
 # Display the plot
 plt.show()
 
+# use seaborn library
+import seaborn as sns
+
+# Clear the plot area
+plt.clf()
+
+# Create a bar chart
+ax = sns.barplot(x="OrderYear", y="GrossRevenue", data=df_sales)
+plt.show()
+
